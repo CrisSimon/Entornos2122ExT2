@@ -1,4 +1,4 @@
-public class Problema1 {
+public class Problema2 {
 
     private static   boolean esMultiplo3(Integer n) {
 
@@ -10,12 +10,12 @@ public class Problema1 {
         return n % 5 == 0;
     }
 
-    public static String cadenaNumerosLetras1al20() {
+    public static String cadenaNumerosLetras1al20(Integer a, Integer b) {
 
         String fizz = "Fizz";
         String buzz = "Buzz";
-        String cadena = "1";
-        for (int i = 2; i <= 20; i++) {
+        String cadena = "";
+        for (int i = a; i <= b; i++) {
 
             if (esMultiplo3(i) && esMultiplo5(i)){
                 cadena = cadena + fizz + buzz;
